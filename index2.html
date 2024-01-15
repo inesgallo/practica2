@@ -5,10 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color: blue;">
+<body style="background-color: #FBF9F9;">
+    <h1>Torneo de ajedrez</h1>
+    <h2>Form</h2>
+    <form id="myForm">
+        <label for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="Escribe tu nombre">
+        <br>
+
+        <label for="firstSurname">Primer Apellido</label>
+        <input type="text" name="firstSurname" id="firstSurname">
+        <br>
+
+        <label for="secondSurname">Segundo Apellido</label>
+        <input type="text" name="secondSurname" id="secondSurname">
+        <br>
+
+        <label for="role">Rol</label>
+        <select name="class" required>
+            <option value="student">Estudiante</option>
+            <option value="teacher">Docente</option>
+            <option value="pass">PASS</option>
+        </select>
+        <br>
+
+        <label for="">Curso</label>
+        <input type="text" name="" id="">
+        <br>
+
+        <label for="">Clase</label>
+        <select name="class">
+            <option value="" selected>Elige una opción</option>
+            <option value="gryffindor">Gryffindor</option>
+            <option value="slytherin">Slytherin</option>
+            <option value="hafflepuff">Hafflepuff</option>
+            <option value="ravenclaw">Ravenclaw</option>
+        </select>
+        <br>
+
+        <label for="">Email</label>
+        <input type="email" name="" id="" placeholder="Escribe tu correo">
+        <br>
+
+        <button type="button" onclick="addRow()">Agregar a la lista</button>
 
 
+
+        <input type="reset" value="reset">
+    </form>
+
+    <!-- TABLA -->
+    <h2>Administrador de listas</h2>
+    <table id="tables">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Primer Apellido</th>
+                <th>Segundo Apellido</th>
+                <th>Rol</th>
+                <th>Curso</th>
+                <th>Clase</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+
+
+<hr>
     <a href="index.html"><button>Volver</button></a>
-    <script src="/app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

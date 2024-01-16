@@ -54,18 +54,25 @@ form h1{
 .lineOne{
     background-color: aqua;
     width: 100%;
-
+    display: flex;
+    justify-content: space-around;
+}
+.lineTwo{
+    background-color: rgb(255, 0, 247);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 .fieldSet{
     display: flex;
-    width: 291px;
     height: 76px;
     flex-direction: column;
-    align-items: flex-start;
 }
 .fieldName{
     width: 291px;
     height: 48px;
     border-radius: 8px;
-    padding: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

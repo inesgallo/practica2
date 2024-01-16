@@ -3,60 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Torneito</title>
 </head>
 <body style="background-color: #FBF9F9;">
     <h1>Torneo de ajedrez</h1>
+
+    <!-- FORM -->
     <h2>Form</h2>
     <form id="myForm">
         <label for="name">Nombre</label>
-        <input type="text" name="name" id="name" placeholder="Escribe tu nombre">
-        <br>
+        <input type="text" id="name" name="name" required><br>
 
-        <label for="firstSurname">Primer Apellido</label>
-        <input type="text" name="firstSurname" id="firstSurname">
-        <br>
+        <label for="surname1">Primer Apellido</label>
+        <input type="text" id="surname1" name="surname1" required><br>
 
-        <label for="secondSurname">Segundo Apellido</label>
-        <input type="text" name="secondSurname" id="secondSurname">
-        <br>
+        <label for="surname2">Segundo Apellido</label>
+        <input type="text" id="surname2" name="surname2"><br>
 
-        <label for="role">Rol</label>
-        <select name="class" required>
-            <option value="student">Estudiante</option>
-            <option value="teacher">Docente</option>
-            <option value="pass">PASS</option>
-        </select>
-        <br>
+        <label for="role">Role</label>
+        <select id="role" name="role">
+            <option value="Estudiante">Estudiante</option>
+            <option value="Docente">Docente</option>
+            <option value="PASS">PASS</option>
+        </select><br>
 
-        <label for="">Curso</label>
-        <input type="text" name="" id="">
-        <br>
+        <label for="course">Curso</label>
+        <select id="course" name="course">
+            <option value="Gryffindor">Gryffindor</option>
+            <option value="Slytherin">Slytherin</option>
+            <option value="Hufflepuff">Hufflepuff</option>
+            <option value="Ravenclaw">Ravenclaw</option>
+        </select><br>
 
-        <label for="">Clase</label>
-        <select name="class">
-            <option value="" selected>Elige una opción</option>
-            <option value="gryffindor">Gryffindor</option>
-            <option value="slytherin">Slytherin</option>
-            <option value="hafflepuff">Hafflepuff</option>
-            <option value="ravenclaw">Ravenclaw</option>
-        </select>
-        <br>
+        <label for="class">Class</label>
+        <input type="text" id="class" name="class"><br>
 
-        <label for="">Email</label>
-        <input type="email" name="" id="" placeholder="Escribe tu correo">
-        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br>
 
-        <button type="button" onclick="addRow()">Agregar a la lista</button>
-
-
-
+        <button type="button" onclick="addRow()">Añadir a la lista</button>
         <input type="reset" value="reset">
+
     </form>
 
-    <!-- TABLA -->
-    <h2>Administrador de listas</h2>
-    <table id="tables">
+    <h2>Lista</h2>
+    <table id="myTable">
         <thead>
             <tr>
                 <th>Nombre</th>
@@ -69,15 +60,13 @@
             </tr>
         </thead>
         <tbody>
-
+            <!-- Rows will be added dynamically here -->
         </tbody>
-
     </table>
 
-
-
-<hr>
+    <hr>
     <a href="index.html"><button>Volver</button></a>
+
     <script src="app.js"></script>
 </body>
 </html>

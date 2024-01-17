@@ -57,7 +57,20 @@ p {
 .footerHome{
     width: 100%;
 }
-    
+.deleteButton{
+    border-radius: 4PX;
+}
+
+
+
+
+
+
+
+
+
+
+/*ESTILOS INDEX*/
 #content-index{
     background-image:url(img/imagen-fondo.png) ;
     color: white;

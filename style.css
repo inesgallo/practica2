@@ -57,8 +57,14 @@ p {
 .footerHome{
     width: 100%;
 }
-.deleteButton{
-    border-radius: 4PX;
+#buttonDelete{
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background-image: url('/img/papelera.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .custom-no-display{

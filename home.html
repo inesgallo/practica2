@@ -28,7 +28,7 @@
       <!--Formulario-->
       <section id="formHome" class="px-5">
           <h1 class="fs-5 mt-3 fw-bold text-center">SOMBRERO SELECCIONADOR</h1>
-          <form action="">
+          <form action="" id="ourForm">
             <div class="container mt-4 gap-3 ">
                 <div class="row">
                   <div class="col-xl-3 col-lg-6 col-sm-12">
@@ -57,10 +57,10 @@
                       <label class="custom-no-display fw-bold col-xl-3 col-lg-6 col-sm-12" for="selectCasa">Selecciona tu casa</label>
                       <select id="selectCasa" class="form-select" aria-label="Default select example">
                         <option selected></option>
-                        <option value="1">Gryffindor</option>
-                        <option value="2">Hufflepuff</option>
-                        <option value="3">Ravenclaw </option>
-                        <option value="3">Slytherin</option>
+                        <option value="Gryffindor">Gryffindor</option>
+                        <option value="Hufflepuff">Hufflepuff</option>
+                        <option value="Ravenclaw">Ravenclaw </option>
+                        <option value="Slytherin">Slytherin</option>
                       </select>
                     </div>
                   </div>
@@ -80,7 +80,7 @@
                   </div>
                   
                  <div class="col-xl-3 col-lg-6 col-sm-12">
-                    <button class="buttonSend mt-4 mb-4 w-100 h-70">Enviar</button>
+                    <button type="submit" class="buttonSend mt-4 mb-4 w-100 h-70" onclick="addRow()">Enviar</button>
                  </div>
                 </div>
               </div>    
@@ -91,7 +91,7 @@
       <section id="tableHome">
         <div class="container">
             <div class="row">
-                    <table class="table-default m-4 text-light">
+                    <table class="table-default m-4 text-light" id="ourTable">
                         <thead>
                           <tr class="table-primary text-light">
                             <th scope="col">Nombre</th>
@@ -105,15 +105,8 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>Mark</td>
-                            <td>Otto</td>
-                            <td>@mdo</td>
-                            <td>@mdo</td>
-                            <td><button type="button" class="deleteButton"><img src="img\papelera.png" alt=""></button></td>
+
+                            <!--<td><button type="button" class="deleteButton"><img src="img\papelera.png" alt=""></button></td>-->
                           </tr>
                         </tbody>
                       </table>

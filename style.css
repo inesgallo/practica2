@@ -18,14 +18,6 @@
     margin-top: 57px;
 }
 
-h1 {
-    font-size: 22px;
-}
-
-p {
-    font-size: 16px;
-}
-
 #formHome {
     background-color: #fbf9f9;
     width: 100%;
@@ -51,8 +43,16 @@ p {
     border: none;
     background-color: #229A9B ;
     color:#fbf9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
 }
 
+.buttonSend img{
+    width: 7px;
+    height: 11.46px;
+}
 
 .footerHome{
     width: 100%;
@@ -60,8 +60,9 @@ p {
 #buttonDelete{
     width: 24px;
     height: 24px;
-    border-radius: 4px;
-    background-image: url('/img/papelera.png');
+    border-radius: 50%;
+    border: 1px solid #022332;
+    background-image: url('img/papelera.png');
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -71,11 +72,48 @@ p {
     display: inline;
 }
 
+.logo{
+    width: 83px;
+    height: 103px;
+}
 
 
+/* PRUEBITA */
+.thName{
+    width: 10%;
+}
 
+.thSurname1, .thSurname2{
+    width: 18%;
+}
 
+.thEmail{
+    width: 20%;
+}
 
+.thHome, .thCourse, .thClass{
+    width: 9%;
+}
+
+tbody tr {
+    border-bottom: 1px solid #FFFFFF;
+    height: 7px;
+}
+
+.text-light th{
+    border-left: 1px solid white;
+    padding-left: 0.8%;
+}
+
+tr td {
+    font-weight: lighter;
+}
+
+/* PSEUDOCLASE para eliminar el borde derecho de la primera celda */
+
+th:first-child {
+    border-left: none;
+}
 
 
 /*ESTILOS INDEX*/
@@ -179,6 +217,10 @@ p {
     }
     /* .row .col-sm-12{
         width: 40%;
+    } */
+
+    /* .container .row {
+        width: 95%;
     } */
 }
 

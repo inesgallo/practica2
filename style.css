@@ -29,7 +29,7 @@
 }
 
 #tableHome {
-    background-color:#022332;
+    background-color: #022332;
     height: 295px;
     width: 100%;
     margin-bottom: 19px;
@@ -37,27 +37,28 @@
     border-radius: 23px;
 }
 
-.buttonSend{
+.buttonSend {
     height: 38px;
-    border-radius: 4px ;
+    border-radius: 4px;
     border: none;
-    background-color: #229A9B ;
-    color:#fbf9f9;
+    background-color: #229A9B;
+    color: #fbf9f9;
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 20px;
 }
 
-.buttonSend img{
+.buttonSend img {
     width: 7px;
     height: 11.46px;
 }
 
-.footerHome{
+.footerHome {
     width: 100%;
 }
-#buttonDelete{
+
+#buttonDelete {
     width: 24px;
     height: 24px;
     border-radius: 50%;
@@ -65,33 +66,35 @@
     background-image: url('img/papelera.png');
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
-.custom-no-display{
+.custom-no-display {
     display: inline;
 }
 
-.logo{
+.logo {
     width: 83px;
     height: 103px;
 }
 
 
-/* PRUEBITA */
-.thName{
+.thName {
     width: 10%;
 }
 
-.thSurname1, .thSurname2{
+.thSurname1,
+.thSurname2 {
     width: 18%;
 }
 
-.thEmail{
+.thEmail {
     width: 20%;
 }
 
-.thHome, .thCourse, .thClass{
+.thHome,
+.thCourse,
+.thClass {
     width: 9%;
 }
 
@@ -100,7 +103,7 @@ tbody tr {
     height: 7px;
 }
 
-.text-light th{
+.text-light th {
     border-left: 1px solid white;
     padding-left: 0.8%;
 }
@@ -109,22 +112,20 @@ tr td {
     font-weight: lighter;
 }
 
-/* PSEUDOCLASE para eliminar el borde derecho de la primera celda */
 
 th:first-child {
     border-left: none;
 }
 
 
-/*ESTILOS INDEX*/
-#content-index{
-    background-image:url(img/imagen-fondo.png) ;
+#content-index {
+    background-image: url(img/imagen-fondo.png);
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#content-in{
+#content-in {
     width: 41%;
     height: auto;
     background-color: #022332;
@@ -140,7 +141,7 @@ th:first-child {
 
 }
 
-#content-in img{
+#content-in img {
     width: 185px;
     height: auto;
     color: white;
@@ -150,20 +151,20 @@ th:first-child {
 
 }
 
-#content-in p{
+#content-in p {
     width: 68%;
     padding-bottom: 40px;
     font-size: 1rem;
     line-height: 24px;
 }
 
-#flags-house img{
+#flags-house img {
     width: 54.06px;
     height: 67px;
-    margin:0;
+    margin: 0;
 }
 
-#flags-house{
+#flags-house {
     display: flex;
     gap: 2rem;
     height: 68px;
@@ -171,7 +172,7 @@ th:first-child {
     margin-bottom: 48.5px;
 }
 
-#button-access{
+#button-access {
     width: 156px;
     height: 51px;
     font-size: 22px;
@@ -181,7 +182,7 @@ th:first-child {
     color: white;
 }
 
-#button-access:hover{
+#button-access:hover {
     background-color: #DFEFE7;
     color: #022332;
     cursor: pointer;
@@ -189,51 +190,50 @@ th:first-child {
 }
 
 @keyframes shake {
-    0%{
+    0% {
         transform: translate(0px, 0px) rotate(0deg);
     }
-    25%{
+
+    25% {
         transform: translate(1px, 1px) rotate(1deg);
     }
-    50%{
+
+    50% {
         transform: translate(-1px, 1px) rotate(-1deg);
     }
-    75%{
+
+    75% {
         transform: translate(2px, -1px) rotate(2deg);
     }
-    100%{
+
+    100% {
         transform: translate(-1px, 1px) rotate(-1deg);
     }
 }
 
-/* RESPONSIVE TABLET */
 @media (min-width: 768px) and (max-width: 950px) {
     #content-in {
         width: 70%;
     }
 
-    #formHome, #tableHome {
+    #formHome,
+    #tableHome {
         width: 90%;
     }
-    /* .row .col-sm-12{
-        width: 40%;
-    } */
 
-    /* .container .row {
-        width: 95%;
-    } */
 }
 
-/* RESPONSIVE MOBILE*/
 @media (max-width: 768px) {
-    #content-in{
+    #content-in {
         width: 95%;
     }
-    #flags-house{
+
+    #flags-house {
         gap: 1rem;
     }
 
-    #formHome, #tableHome {
+    #formHome,
+    #tableHome {
         width: 99%;
     }
 }

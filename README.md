@@ -1,3 +1,6 @@
+![Banner](/img/Banner-light.png)
+
+
 ## Descripción
 
 Aplicación web de gestión de registros de alumnado para colegio.

@@ -25,10 +25,9 @@ Lista de tecnologías y lenguajes utilizados en el proyecto, por ejemplo:
 
 Pasos para instalar y ejecutar el proyecto localmente, por ejemplo:
 
-1. Clona el repositorio: `https://github.com/inesgallo/practica2.git`
-2. Navega a la carpeta del proyecto: `cd proyecto`
-3. Instala las dependencias: `npm install`
-4. Ejecuta el servidor: `npm start`
+1. Clona el repositorio: `https://github.com/inesgallo/practica2.git`.
+2. Navega a la carpeta del proyecto: `cd practica2`.
+3. Trastea y prueba lo que quieras.
 
 ## Equipo
 
